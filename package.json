@@ -1,22 +1,27 @@
 {
-  "name": "starter-express-api",
+  "name": "medford_backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "this is medford mvp backend",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
-  },
-  "author": "",
+  "keywords": [
+    "medford",
+    "mvp",
+    "backend"
+  ],
+  "author": "medford",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cyclic-software/starter-express-api/issues"
-  },
-  "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "@sendgrid/mail": "^7.7.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0"
   }
 }
